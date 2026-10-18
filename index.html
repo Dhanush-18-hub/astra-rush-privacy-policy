@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#090c18">
+  <meta name="description" content="Astra Rush privacy policy: information about local game saves, Google AdMob advertising, Unity diagnostics, privacy choices, and contacting the developer.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Privacy Policy | Astra Rush</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #090c18;
+      --panel: #101426;
+      --text: #e8ecf5;
+      --muted: #b3bdd3;
+      --cyan: #66e7f4;
+      --pink: #ff8bd6;
+      --line: #303a52;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-padding-top: 1.5rem; }
+    body {
+      margin: 0;
+      background: radial-gradient(ellipse at 85% 0, #27122e 0, transparent 32rem), var(--bg);
+      color: var(--text);
+      font: 1rem/1.75 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      overflow-wrap: anywhere;
+    }
+    a { color: var(--cyan); text-underline-offset: .22em; text-decoration-thickness: .08em; }
+    a:hover { color: #fff; }
+    a:focus-visible, summary:focus-visible { outline: 3px solid var(--pink); outline-offset: 5px; border-radius: 3px; }
+    .skip-link { position: absolute; top: .75rem; left: 1rem; z-index: 10; padding: .6rem 1rem; background: var(--panel); transform: translateY(-200%); }
+    .skip-link:focus { transform: translateY(0); }
+    .shell { width: min(1120px, 100% - 3rem); margin-inline: auto; }
+    .masthead { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: 1.75rem; border-bottom: 1px solid var(--line); }
+    .brand { margin: 0; font-weight: 850; font-size: 1.15rem; letter-spacing: .12em; color: #e6fbff; line-height: 1.4; }
+    .brand span { color: var(--pink); }
+    .eyebrow { color: var(--cyan); font-size: .75rem; font-weight: 750; letter-spacing: .15em; text-transform: uppercase; }
+    .masthead .eyebrow { color: var(--muted); text-align: right; }
+    .hero { position: relative; padding-block: 3.5rem 2.75rem; }
+    .hero::after { content: ""; position: absolute; bottom: 0; left: 0; width: 7rem; height: 3px; background: linear-gradient(90deg, var(--cyan), var(--pink)); }
+    h1 { margin: .2rem 0 .75rem; font-size: clamp(2.5rem, 5vw, 4.25rem); line-height: 1.12; letter-spacing: -.045em; }
+    .intro { max-width: 43rem; margin: 0; color: var(--muted); font-size: 1.12rem; }
+    .dates { display: flex; flex-wrap: wrap; gap: .4rem 1.75rem; margin-top: 1.5rem; color: var(--muted); font-size: .875rem; }
+    .dates strong { font-weight: 650; color: var(--text); }
+    .overview { margin-top: 2rem; padding: 1.3rem 1.5rem; border: 1px solid var(--line); border-left: 3px solid var(--cyan); border-radius: .75rem; background: var(--panel); }
+    .overview h2 { margin: 0 0 .3rem; font-size: 1rem; }
+    .overview p { margin: 0; color: var(--muted); }
+    .policy-layout { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 3rem; align-items: start; margin-block: 2.75rem 4rem; }
+    .contents { position: sticky; top: 1.5rem; }
+    .contents h2 { color: var(--muted); margin: 0 0 .8rem; font-size: .75rem; text-transform: uppercase; letter-spacing: .14em; }
+    .contents ol { list-style: none; padding: 0; margin: 0; }
+    .contents a { display: flex; align-items: center; min-height: 44px; padding: .4rem .6rem; border-left: 1px solid var(--line); color: var(--muted); text-decoration: none; font-size: .875rem; line-height: 1.4; }
+    .contents a:hover { background: var(--panel); color: var(--cyan); border-color: var(--cyan); }
+    article { min-width: 0; }
+    section { padding-bottom: 2rem; margin-bottom: 2rem; border-bottom: 1px solid var(--line); scroll-margin-top: 1rem; }
+    section:last-child { margin-bottom: 0; }
+    h2 { font-size: 1.35rem; line-height: 1.4; letter-spacing: -.02em; margin: 0 0 1rem; }
+    .number { color: var(--pink); display: block; font-size: .75rem; letter-spacing: .1em; margin-bottom: .35rem; font-weight: 750; }
+    h3 { font-size: 1.05rem; line-height: 1.5; margin: 1.5rem 0 .5rem; }
+    p { margin: 0 0 1rem; }
+    p:last-child { margin-bottom: 0; }
+    ul { margin: .75rem 0 1rem; padding-left: 1.35rem; }
+    li { padding-left: .15rem; margin-block: .4rem; }
+    li::marker { color: var(--cyan); }
+    strong { font-weight: 700; }
+    .note { background: var(--panel); border-radius: .6rem; padding: 1rem 1.2rem; color: var(--muted); }
+    .contact { padding: 1.5rem; background: var(--panel); border: 1px solid var(--line); border-radius: .8rem; }
+    .contact a { display: inline-block; padding-block: .5rem; font-size: clamp(1rem, 3vw, 1.25rem); font-weight: 650; }
+    .contact p { margin-bottom: .5rem; }
+    footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1.5rem; padding-block: 1.5rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem; }
+    footer a { display: inline-block; padding-block: .5rem; }
+    @media (max-width: 780px) {
+      .policy-layout { grid-template-columns: 1fr; gap: 2rem; margin-top: 2rem; }
+      .contents { position: static; }
+      .contents ol { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: .75rem; }
+      .hero { padding-block: 2.5rem 2rem; }
+    }
+    @media (max-width: 420px) {
+      .shell { width: calc(100% - 2rem); }
+      .masthead { padding-block: 1.25rem; }
+      .brand { font-size: 1rem; }
+      .masthead .eyebrow { font-size: .65rem; }
+      .overview, .contact { padding: 1.1rem; }
+      .contents a { font-size: .8125rem; }
+    }
+    @media print {
+      :root { color-scheme: light; }
+      body { background: white; color: black; font-size: 10pt; }
+      .shell { width: 100%; }
+      .skip-link, .contents, .hero::after, footer a { display: none; }
+      .policy-layout { display: block; margin-block: 1rem; }
+      .hero { padding-block: 1rem; }
+      .overview, .note, .contact { background: transparent; }
+      .brand, .brand span, .eyebrow, .intro, .dates, .dates strong, .overview p, .note, .number, footer, a { color: black; }
+      h2, h3 { break-after: avoid; }
+      section { margin-bottom: 1rem; padding-bottom: 1rem; }
+    }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#policy">Skip to privacy policy</a>
+  <div class="shell">
+    <header class="masthead">
+      <p class="brand" aria-label="Astra Rush">ASTRA <span>RUSH</span></p>
+      <span class="eyebrow">Android game · Privacy</span>
+    </header>
+    <main id="policy" tabindex="-1">
+      <div class="hero">
+        <p class="eyebrow">Information &amp; your choices</p>
+        <h1>Privacy policy</h1>
+        <p class="intro">How Astra Rush handles game progress, advertising information, and technical data — and how to contact us about your privacy.</p>
+        <div class="dates">
+          <span><strong>Effective:</strong> <time datetime="2026-10-18">18 October 2026</time></span>
+          <span><strong>Last updated:</strong> <time datetime="2026-10-18">18 October 2026</time></span>
+        </div>
+      </div>
+      <aside class="overview" aria-labelledby="overview-heading">
+        <h2 id="overview-heading">At a glance</h2>
+        <p>Game progress is saved on your device. Advertising and technical services can process information separately. You do not need to create a game account to play.</p>
+      </aside>
+      <div class="policy-layout">
+        <nav class="contents" aria-label="Privacy policy sections">
+          <h2>In this policy</h2>
+          <ol>
+            <li><a href="#scope">01 · Introduction</a></li>
+            <li><a href="#information">02 · Information processed</a></li>
+            <li><a href="#advertising">03 · Advertising &amp; AdMob</a></li>
+            <li><a href="#use">04 · How information is used</a></li>
+            <li><a href="#sharing">05 · Service providers</a></li>
+            <li><a href="#retention">06 · Retention &amp; deletion</a></li>
+            <li><a href="#children">07 · Children's privacy</a></li>
+            <li><a href="#security">08 · Security</a></li>
+            <li><a href="#choices">09 · Choices &amp; rights</a></li>
+            <li><a href="#changes">10 · Policy changes</a></li>
+            <li><a href="#contact">11 · Contact</a></li>
+          </ol>
+        </nav>
+        <article aria-label="Astra Rush privacy policy">
+          <section id="scope" aria-labelledby="scope-heading">
+            <h2 id="scope-heading"><span class="number" aria-hidden="true">01</span>Introduction and scope</h2>
+            <p>This Privacy Policy applies to <strong>Astra Rush</strong>, an Android game provided by <strong>Astra Rush developer</strong> ("we", "us", or "our"), and to this privacy-policy webpage. It explains information processed by the game, by integrated services, and when you contact us.</p>
+            <p>Astra Rush includes Google AdMob rewarded and interstitial advertising and is built with Unity. Local game saves are separate from information that these services may receive. Links to a provider's policy explain that provider's own practices; this page is not a certification of compliance or a promise that no information is collected.</p>
+          </section>
+          <section id="information" aria-labelledby="information-heading">
+            <h2 id="information-heading"><span class="number" aria-hidden="true">02</span>Information collected or processed</h2>
+            <h3>Game progress and preferences on your device</h3>
+            <p>The game stores progress in local files and device preferences. This includes high scores, gem balances, unlocked and equipped items, achievements, gameplay statistics, tutorial completion, audio preferences, daily-reward dates and streaks, and ad-frequency or reward-transaction records. Daily-reward checks also use device time and a saved time-zone identifier.</p>
+            <p>These records support gameplay and prevent duplicate rewards. The current game does not provide an account sign-in or a developer-operated cloud-save service. Android or device backup and restore features may handle app data separately, depending on your device and settings.</p>
+            <h3>Information you choose to send</h3>
+            <p>If you email us, we receive your email address and the content you send, such as a support request, screenshot, or diagnostic log. Please avoid sending passwords, payment details, or unnecessary personal information.</p>
+            <h3>Unity engine diagnostics</h3>
+            <p>Unity engine diagnostics are enabled in the current project configuration. When active in the distributed app, Unity can process an installation-specific identifier and technical information such as device and software details, crash or error reports, and runtime performance telemetry to support stability and troubleshooting. The data processed depends on the build and Unity service settings.</p>
+            <p>This is distinct from the legacy Unity Analytics and Cloud Diagnostics features, which are disabled in the inspected configuration. No separate Firebase Analytics, Firebase Crashlytics, authentication, or custom cloud-save integration was found in the current game implementation. See <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity's Game Player and App User Privacy Policy</a> and its <a href="https://docs.unity.com/en-us/cloud/developer-data/privacy-overview">Diagnostics privacy information</a>.</p>
+            <h3>Visiting this webpage</h3>
+            <p>This page contains no advertising scripts, analytics scripts, external fonts, or tracking pixels, and does not itself set cookies or browser storage. When hosted on GitHub Pages, the hosting provider may process technical request information, including your IP address, to deliver and protect the site. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
+          </section>
+          <section id="advertising" aria-labelledby="advertising-heading">
+            <h2 id="advertising-heading"><span class="number" aria-hidden="true">03</span>Advertising and Google AdMob</h2>
+            <p>Astra Rush uses Google's Mobile Ads SDK for interstitial ads and optional rewarded ads, such as earning gems or continuing a run. Google and its advertising services process information to deliver and measure ads, maintain reliability, and detect invalid activity.</p>
+            <p>Depending on the SDK, device, and privacy configuration, this can include:</p>
+            <ul>
+              <li><strong>Network information:</strong> an IP address, which can be used to infer approximate location.</li>
+              <li><strong>Interactions:</strong> app launches, ad views, taps, and video interactions.</li>
+              <li><strong>Diagnostics:</strong> app or SDK performance, failures, and related technical information.</li>
+              <li><strong>Identifiers:</strong> app-set or other app/device identifiers. Google's SDK also supports advertising and certain account-related identifiers where permitted.</li>
+            </ul>
+            <p>Google describes these categories in its <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Mobile Ads data disclosure</a>. The game does not request GPS or precise-location permission; approximate location can still be inferred from network information.</p>
+            <p><strong>Current advertising controls:</strong> the integration requests non-personalized ads, child age treatment for all users, and a general-audience ad-content rating. It disables publisher first-party IDs after SDK initialization. The Android build configuration removes advertising-ID and Privacy Sandbox advertising permissions; those permissions are also absent from the inspected test APK. These measures limit identifier use, but do not mean that ads process no data.</p>
+            <p>The game includes Google's User Messaging Platform (UMP) to obtain applicable privacy status and present messages or privacy options when required. The production ad flow checks whether UMP permits ad requests. Development builds using Google's official sample ads have a separate test-only flow; sample-ad behavior is not proof that production consent is configured correctly.</p>
+            <p>For Google's practices and controls, read the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://policies.google.com/technologies/ads">Google's advertising privacy information</a>. Ad availability and privacy messages can vary by region and configuration.</p>
+          </section>
+          <section id="use" aria-labelledby="use-heading">
+            <h2 id="use-heading"><span class="number" aria-hidden="true">04</span>How information is used</h2>
+            <ul>
+              <li>To save progress, settings, collections, and achievements.</li>
+              <li>To calculate reward eligibility, record completed claims, and prevent duplicate grants.</li>
+              <li>To manage ad availability, frequency, privacy choices, and earned rewards.</li>
+              <li>To deliver and measure advertising and help prevent fraud or abuse.</li>
+              <li>To diagnose technical problems and respond to support or privacy requests.</li>
+              <li>To meet applicable legal obligations and address security concerns.</li>
+            </ul>
+            <p>Local gameplay records are not the same as an advertising profile. Third-party processing described above can occur independently of the game's local save system.</p>
+          </section>
+          <section id="sharing" aria-labelledby="sharing-heading">
+            <h2 id="sharing-heading"><span class="number" aria-hidden="true">05</span>Sharing and service providers</h2>
+            <p>Google processes advertising and privacy-message information through AdMob and UMP. Unity can process technical diagnostics through its engine services. GitHub processes hosting requests for this page, and email providers process messages you send to the contact address.</p>
+            <p>These providers may process information in countries other than your own under their applicable terms and privacy policies. Provider processing may be carried out on our behalf or for the provider's own disclosed purposes, depending on the service.</p>
+            <p>We may also disclose information we hold when required by law or necessary to respond to a lawful request, protect safety, or address fraud. The current game does not contain a separate mechanism for uploading your local gem balance, scores, or collection inventory to a developer-operated server.</p>
+          </section>
+          <section id="retention" aria-labelledby="retention-heading">
+            <h2 id="retention-heading"><span class="number" aria-hidden="true">06</span>Data retention and deletion</h2>
+            <p><strong>Local game data:</strong> progress and preferences are retained on your device until removed or replaced. You can use Android's app settings to clear Astra Rush's storage, or uninstall the app. This may permanently remove your progress, gems, and settings. Device backups, restored data, or copies you made may remain separately; clearing app storage does not delete provider-held information.</p>
+            <p><strong>Support messages:</strong> messages are retained for handling your request and any necessary follow-up, security, dispute, or legal purposes. You can ask us to delete information we hold, subject to applicable obligations and any necessary verification.</p>
+            <p><strong>Provider records:</strong> Google, Unity, GitHub, and email services apply their own service-specific retention rules. Retention can depend on the data type, service settings, and legal requirements. Contact us about provider records processed on our behalf; we will handle the request with the relevant provider where appropriate. Requests about a provider's independent processing can also be made through its privacy channels.</p>
+            <p class="note">Uninstalling Astra Rush or resetting an advertising identifier does not automatically erase all historical advertising, diagnostic, hosting, or support records.</p>
+          </section>
+          <section id="children" aria-labelledby="children-heading">
+            <h2 id="children-heading"><span class="number" aria-hidden="true">07</span>Children's privacy</h2>
+            <p>Astra Rush is intended for a mixed audience that may include children. The current game has no age-verification or account-registration feature. Its ad integration therefore requests child age treatment for all users rather than assuming that a player is an adult.</p>
+            <p>Non-personalized ads and child-directed settings do not eliminate all technical processing. The advertising and Unity diagnostic information described in this policy may still be processed as permitted by the relevant service configuration and applicable law.</p>
+            <p>If you are a parent or guardian with a concern about a child's information, contact <a href="mailto:codexa393@gmail.com">codexa393@gmail.com</a>. We will investigate and address information we control, including appropriate deletion requests. Please do not send a child's full name, date of birth, or identity documents unless a specific need and safe method have first been explained.</p>
+          </section>
+          <section id="security" aria-labelledby="security-heading">
+            <h2 id="security-heading"><span class="number" aria-hidden="true">08</span>Security</h2>
+            <p>The game uses device storage and save-integrity checks to reduce accidental corruption and duplicate transactions. These checks are not encryption or a guarantee against access to a compromised device. Google states that Mobile Ads SDK data is encrypted in transit.</p>
+            <p>No method of transmission or storage is completely secure. Keep your device and game updated, protect access to your device, and avoid including sensitive information in support attachments.</p>
+          </section>
+          <section id="choices" aria-labelledby="choices-heading">
+            <h2 id="choices-heading"><span class="number" aria-hidden="true">09</span>Your privacy choices and rights</h2>
+            <ul>
+              <li><strong>Rewarded ads:</strong> you can choose not to watch an optional rewarded ad; the associated ad reward will not be earned. This does not disable all SDK initialization, preloading, or interstitial advertising.</li>
+              <li><strong>Ad privacy options:</strong> when Google's SDK requires an entry point, use <strong>AD PRIVACY OPTIONS</strong> on the Main Menu to review available choices. The option may not appear in every region or in sample-ad test builds.</li>
+              <li><strong>Android controls:</strong> your device may offer advertising-ID reset or deletion and other ad-privacy settings. Their names and availability depend on the Android version. These controls do not necessarily stop all technical data processing.</li>
+              <li><strong>Local data:</strong> clear the app's storage in Android settings as described above. There is no game-account deletion flow because the current game does not create player accounts.</li>
+              <li><strong>Requests to us:</strong> depending on where you live, you may have rights to access, correct, delete, obtain a copy of, restrict, or object to certain processing, withdraw applicable consent, or complain to a privacy regulator. Email us to ask about these rights.</li>
+            </ul>
+            <p>We may need reasonable information to locate records and verify a request. We cannot access your on-device save remotely, and not every request will apply to every type of information. We will explain relevant limitations rather than promise deletion of data we do not control. The current game does not offer a separate Unity-diagnostics toggle.</p>
+          </section>
+          <section id="changes" aria-labelledby="changes-heading">
+            <h2 id="changes-heading"><span class="number" aria-hidden="true">10</span>Changes to this policy</h2>
+            <p>We may update this policy when the game, integrated services, or applicable requirements change. Updates will be posted on this page with a revised last-updated date. Where additional notice or consent is required, it will be provided as applicable.</p>
+          </section>
+          <section id="contact" class="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading"><span class="number" aria-hidden="true">11</span>Contact the developer</h2>
+            <p><strong>Astra Rush developer</strong><br>Android game: Astra Rush</p>
+            <a href="mailto:codexa393@gmail.com">codexa393@gmail.com</a>
+            <p>For privacy questions or requests, include "Astra Rush privacy" in the subject and describe your concern. Please share only the information needed to help with your request.</p>
+          </section>
+        </article>
+      </div>
+    </main>
+    <footer>
+      <span>Astra Rush · Android · Privacy Policy</span>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+  </div>
+  <!--
+    Maintainer release checklist (not a claim of legal or runtime certification):
+    Prepared 2026-10-18 from the available Unity source and an existing test APK.
+    Confirm the final release's AdMob/UMP dashboard messages, mixed-audience review,
+    Unity diagnostic collection/retention and child-data basis, and Data safety form.
+    Current inspected Ads configuration is OfficialTestAds; production approval is false.
+    Re-check the policy if release settings, SDKs, permissions, or data practices change.
+    No external assets, scripts, frameworks, analytics, or client-side storage are used here.
+  -->
+</body>
+</html>
